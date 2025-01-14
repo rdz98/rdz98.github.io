@@ -1,22 +1,21 @@
 main:
 
-  - title: Continual Learning for Abdominal Multi-Organ and Tumor Segmentation
-    authors: Yixiao Zhang, Xinyi Li, Huimiao Chen, Alan Yuille, <strong>Yaoyao Liu*</strong>, Zongwei Zhou* (*Corresponding authors)
-    conference_short: MICCAI
-    conference: International Conference on Medical Image Computing and Computer-Assisted Intervention <strong>(MICCAI)</strong>, 2023.
-    pdf: https://arxiv.org/pdf/2306.00988.pdf
-    code: https://github.com/MrGiovanni/ContinualLearning
-    bibtex: https://bib.yliu.me/MICCAI23.txt
-    image: ./assets/img/teaser_example_2.png
-    notes: Early Accept
-
-  - title: "Mnemonics Training: Multi-Class Incremental Learning without Forgetting"
-    authors: <strong>Yaoyao Liu</strong>, Yuting Su, An-An Liu, Bernt Schiele, Qianru Sun
-    conference_short: CVPR
-    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
-    pdf: https://arxiv.org/pdf/2002.10211.pdf
-    code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
-    page: https://class-il.mpi-inf.mpg.de/mnemonics/
-    bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
+  - title: "Poisoning Deep Learning Based Recommender Model in Federated Learning Scenarios"
+    authors: <strong>Dazhong Rong</strong>, Qinming He, Jianhai Chen*
+    conference_short: IJCAI
+    conference: Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence <strong>(IJCAI-22)</strong>
+    pdf: https://www.ijcai.org/proceedings/2022/0306.pdf
+    code: https://github.com/rdz98/PoisonFedDLRS
+    bibtex: ./assets/bib/poisondlrs.txt
+    image: ./assets/img/poisondlrs.png
     notes: Oral Presentation
-    image: ./assets/img/teaser_example.png
+    
+  - title: "FedRecAttack: Model Poisoning Attack to Federated Recommendation"
+    authors: <strong>Dazhong Rong</strong>, Shuai Ye, Ruoyan Zhao, Hon Ning Yuen, Jianhai Chen*, Qinming He
+    conference_short: ICDE
+    conference: 2022 IEEE 38th International Conference on Data Engineering <strong>(ICDE)</strong>
+    pdf: https://arxiv.org/pdf/2204.01499
+    code: https://github.com/rdz98/FedRecAttack
+    bibtex: ./assets/bib/fedrecattack.txt
+    image: ./assets/img/fedrecattack.png
+    notes: Oral Presentation

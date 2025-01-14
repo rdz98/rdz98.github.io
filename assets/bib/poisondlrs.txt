@@ -1,0 +1,19 @@
+@inproceedings{DBLP:conf/ijcai/RongHC22,
+  author       = {Dazhong Rong and
+                  Qinming He and
+                  Jianhai Chen},
+  editor       = {Luc De Raedt},
+  title        = {Poisoning Deep Learning Based Recommender Model in Federated Learning
+                  Scenarios},
+  booktitle    = {Proceedings of the Thirty-First International Joint Conference on
+                  Artificial Intelligence, {IJCAI} 2022, Vienna, Austria, 23-29 July
+                  2022},
+  pages        = {2204--2210},
+  publisher    = {ijcai.org},
+  year         = {2022},
+  url          = {https://doi.org/10.24963/ijcai.2022/306},
+  doi          = {10.24963/IJCAI.2022/306},
+  timestamp    = {Tue, 15 Oct 2024 16:43:28 +0200},
+  biburl       = {https://dblp.org/rec/conf/ijcai/RongHC22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}

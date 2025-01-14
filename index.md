@@ -4,19 +4,20 @@ layout: homepage
 
 ## About Me
 
-I am a Ph.D. student at ...
+I am currently a final-year Ph.D. student from the college of computer science and technology, Zhejiang University.
+I have a background in artificial intelligence research, but my current interests are shifting towards the intersection of AI and neuroscience.
+Specifically, I focus on leveraging AI technologies to develop descriptive and interpretable models of cognitive vision.
+I believe this field holds immense potential for advancing our understanding of both AI and the brain.
+If you're interested in collaboration, I would be delighted to connect and explore opportunities together.
 
 ## Research Interests
 
-- **Computer Vision:** image recognition, image generation, video captioning
-- **Machine Learning:** meta-learning, incremental learning, transfer learning
+- **Computational Neuroscience:** cognitive vision, brain-computer interfaces
+- **AI Privacy & Security:** privacy-preserving computation, backdoor attacks 
 
 ## News
 
-- **[Feb. 2020]** Our paper about incremental learning is accepted to CVPR 2020.
-- **[Feb. 2020]** We will host the ACM Multimedia Asia 2020 conference in Singapore!
-- **[Sept. 2019]** Our paper about few-shot learning is accepted to NeurIPS 2019.
-- **[Mar. 2019]** Our paper about few-shot learning is accepted to CVPR 2019.
+- **[Aug. 2024]** Our paper about subdomain alignment in BCIs is accepted to BIBM 2024.
 
 {% include_relative _includes/publications.md %}
 

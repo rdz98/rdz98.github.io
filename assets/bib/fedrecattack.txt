@@ -1,0 +1,19 @@
+@inproceedings{DBLP:conf/icde/RongYZYCH22,
+  author       = {Dazhong Rong and
+                  Shuai Ye and
+                  Ruoyan Zhao and
+                  Hon Ning Yuen and
+                  Jianhai Chen and
+                  Qinming He},
+  title        = {FedRecAttack: Model Poisoning Attack to Federated Recommendation},
+  booktitle    = {38th {IEEE} International Conference on Data Engineering, {ICDE} 2022,
+                  Kuala Lumpur, Malaysia, May 9-12, 2022},
+  pages        = {2643--2655},
+  publisher    = {{IEEE}},
+  year         = {2022},
+  url          = {https://doi.org/10.1109/ICDE53745.2022.00243},
+  doi          = {10.1109/ICDE53745.2022.00243},
+  timestamp    = {Sat, 30 Sep 2023 09:44:51 +0200},
+  biburl       = {https://dblp.org/rec/conf/icde/RongYZYCH22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
