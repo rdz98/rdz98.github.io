@@ -1,5 +1,14 @@
 main:
 
+  - title: "SmartDS: Middle-Tier-centric SmartNIC Enabling Application-aware Message Split for Disaggregated Block Storage"
+    authors: Jie Zhang, Hongjing Huang, Lingjun Zhu, Shu Ma, <strong>Dazhong Rong</strong>, Yijun Hou, Mo Sun, Chaojie Gu, Peng Cheng, Chao Shi, Zeke Wang*
+    conference_short: ISCA
+    conference: Proceedings of the 50th Annual International Symposium on Computer Architecture <strong>(ISCA-23)</strong>
+    pdf: https://wangzeke.github.io/doc/SmartDS.pdf
+    bibtex: ./assets/bib/smartds.txt
+    image: ./assets/img/smartds.png
+    notes: Oral Presentation
+
   - title: "Poisoning Deep Learning Based Recommender Model in Federated Learning Scenarios"
     authors: <strong>Dazhong Rong</strong>, Qinming He, Jianhai Chen*
     conference_short: IJCAI
