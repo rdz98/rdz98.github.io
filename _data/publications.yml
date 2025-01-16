@@ -1,13 +1,31 @@
 main:
 
-  - title: "SmartDS: Middle-Tier-centric SmartNIC Enabling Application-aware Message Split for Disaggregated Block Storage"
-    authors: Jie Zhang, Hongjing Huang, Lingjun Zhu, Shu Ma, <strong>Dazhong Rong</strong>, Yijun Hou, Mo Sun, Chaojie Gu, Peng Cheng, Chao Shi, Zeke Wang*
-    conference_short: ISCA
-    conference: Proceedings of the 50th Annual International Symposium on Computer Architecture <strong>(ISCA-23)</strong>
-    pdf: https://wangzeke.github.io/doc/SmartDS.pdf
-    bibtex: ./assets/bib/smartds.txt
-    image: ./assets/img/smartds.png
+  - title: "Speed-enhanced Subdomain Alignment for Long-term Stable Neural Decoding in Brain-computer Interfaces"
+    authors: Jiyu Wei, <strong>Dazhong Rong</strong>(co-first), Xinyun Zhu, Qinming He, Yueming Wang*
+    conference_short: BIBM
+    conference: IEEE International Conference on Bioinformatics and Biomedicine <strong>(BIBM-24)</strong>
+    pdf: https://arxiv.org/pdf/2407.17758
+    bibtex: ./assets/bib/sesa.txt
+    image: ./assets/img/sesa.jpg
+
+  - title: "Clean-Image Backdoor Attacks"
+    authors: <strong>Dazhong Rong</strong>, Guoyao Yu, Shuheng Shen, Xinyi Fu, Peng Qian, Jianhai Chen*, Qinming He, Xing Fu, Weiqiang Wang
+    conference_short: ICANN
+    conference: International Conference on Artificial Neural Networks <strong>(ICANN-24)</strong>
+    pdf: https://arxiv.org/pdf/2403.15010
+    code: https://github.com/rdz98/clean-image-backdoor
+    bibtex: ./assets/bib/ciba.txt
+    image: ./assets/img/ciba.jpg
     notes: Oral Presentation
+
+  - title: "CoMeta: Enhancing Meta Embeddings with Collaborative Information in Cold-Start Problem of Recommendation"
+    authors: Haonan Hu, <strong>Dazhong Rong</strong>, Jianhai Chen*, Qinming He, Zhenguang Liu
+    conference_short: KSEM
+    conference: International Conference on Knowledge Science, Engineering and Management <strong>(KSEM-23)</strong>
+    pdf: https://arxiv.org/pdf/2303.07607
+    bibtex: ./assets/bib/cometa.txt
+    image: ./assets/img/cometa.jpg
+    notes: Best Paper Candidate
 
   - title: "Poisoning Deep Learning Based Recommender Model in Federated Learning Scenarios"
     authors: <strong>Dazhong Rong</strong>, Qinming He, Jianhai Chen*

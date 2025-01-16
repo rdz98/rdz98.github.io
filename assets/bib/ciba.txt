@@ -1,0 +1,29 @@
+@inproceedings{DBLP:conf/icann/RongYSFQCHFW24,
+  author       = {Dazhong Rong and
+                  Guoyao Yu and
+                  Shuheng Shen and
+                  Xinyi Fu and
+                  Peng Qian and
+                  Jianhai Chen and
+                  Qinming He and
+                  Xing Fu and
+                  Weiqiang Wang},
+  editor       = {Michael Wand and
+                  Krist{\'{\i}}na Malinovsk{\'{a}} and
+                  J{\"{u}}rgen Schmidhuber and
+                  Igor V. Tetko},
+  title        = {Clean-Image Backdoor Attacks},
+  booktitle    = {Artificial Neural Networks and Machine Learning - {ICANN} 2024 - 33rd
+                  International Conference on Artificial Neural Networks, Lugano, Switzerland,
+                  September 17-20, 2024, Proceedings, Part {X}},
+  series       = {Lecture Notes in Computer Science},
+  volume       = {15025},
+  pages        = {187--202},
+  publisher    = {Springer},
+  year         = {2024},
+  url          = {https://doi.org/10.1007/978-3-031-72359-9\_14},
+  doi          = {10.1007/978-3-031-72359-9\_14},
+  timestamp    = {Thu, 03 Oct 2024 00:44:53 +0200},
+  biburl       = {https://dblp.org/rec/conf/icann/RongYSFQCHFW24.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}

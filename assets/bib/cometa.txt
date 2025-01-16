@@ -1,0 +1,28 @@
+@inproceedings{DBLP:conf/ksem/HuRCHL23,
+  author       = {Haonan Hu and
+                  Dazhong Rong and
+                  Jianhai Chen and
+                  Qinming He and
+                  Zhenguang Liu},
+  editor       = {Zhi Jin and
+                  Yuncheng Jiang and
+                  Robert Andrei Buchmann and
+                  Yaxin Bi and
+                  Ana{-}Maria Ghiran and
+                  Wenjun Ma},
+  title        = {CoMeta: Enhancing Meta Embeddings with Collaborative Information in
+                  Cold-Start Problem of Recommendation},
+  booktitle    = {Knowledge Science, Engineering and Management - 16th International
+                  Conference, {KSEM} 2023, Guangzhou, China, August 16-18, 2023, Proceedings,
+                  Part {III}},
+  series       = {Lecture Notes in Computer Science},
+  volume       = {14119},
+  pages        = {213--225},
+  publisher    = {Springer},
+  year         = {2023},
+  url          = {https://doi.org/10.1007/978-3-031-40289-0\_17},
+  doi          = {10.1007/978-3-031-40289-0\_17},
+  timestamp    = {Mon, 14 Aug 2023 16:42:47 +0200},
+  biburl       = {https://dblp.org/rec/conf/ksem/HuRCHL23.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
