@@ -5,9 +5,10 @@ main:
     conference_short: CogSci
     conference: Proceedings of the Annual Meeting of the Cognitive Science Society <strong>(CogSci-25)</strong>
     pdf: https://arxiv.org/pdf/2505.08316
+    code: https://github.com/rdz98/Unsup-VVS
     bibtex: ./assets/bib/rpp.txt
     image: ./assets/img/rpp.jpg
-    notes: Poster with Full Publication
+    notes: Poster Presentation
   
   - title: "Speed-enhanced Subdomain Alignment for Long-term Stable Neural Decoding in Brain-computer Interfaces"
     authors: Jiyu Wei, <strong>Dazhong Rong</strong>(co-first), Xinyun Zhu, Qinming He, Yueming Wang*

@@ -17,8 +17,8 @@ If you're interested in collaboration, I would be delighted to connect and explo
 
 ## News
 
-- **[Apr. 2025]** Our paper about task-driven models of ventral visual stream is accepted to CogSci 2025.
-- **[Aug. 2024]** Our paper about subdomain alignment in BCIs is accepted to BIBM 2024.
+- **[Apr. 2025]** Our paper about task-driven models of VVS is accepted at CogSci 2025.
+- **[Aug. 2024]** Our paper about subdomain alignment in BCIs is accepted at BIBM 2024.
 
 {% include_relative _includes/publications.md %}
 
