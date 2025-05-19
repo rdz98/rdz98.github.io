@@ -7,7 +7,7 @@ main:
     pdf: https://arxiv.org/pdf/2505.08316
     bibtex: ./assets/bib/rpp.txt
     image: ./assets/img/rpp.jpg
-	notes: Poster with Full Publication
+    notes: Poster with Full Publication
   
   - title: "Speed-enhanced Subdomain Alignment for Long-term Stable Neural Decoding in Brain-computer Interfaces"
     authors: Jiyu Wei, <strong>Dazhong Rong</strong>(co-first), Xinyun Zhu, Qinming He, Yueming Wang*
