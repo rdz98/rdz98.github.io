@@ -1,10 +1,28 @@
-@INPROCEEDINGS{10822151,
-  author={Wei, Jiyu and Rong, Dazhong and Zhu, Xinyun and He, Qinming and Wang, Yueming},
-  booktitle={2024 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)}, 
-  title={Speed-enhanced Subdomain Alignment for Long-term Stable Neural Decoding in Brain-computer Interfaces}, 
-  year={2024},
-  volume={},
-  number={},
-  pages={3832-3837},
-  keywords={Correlation;Accuracy;Semisupervised learning;Brain-computer interfaces;Robustness;Decoding;Paralysis;Bioinformatics;Faces;brain-computer interfaces;neural decoding;recalibration;domain adaptation},
-  doi={10.1109/BIBM62325.2024.10822151}}
+@inproceedings{DBLP:conf/bibm/WeiRZHW24,
+  author       = {Jiyu Wei and
+                  Dazhong Rong and
+                  Xinyun Zhu and
+                  Qinming He and
+                  Yueming Wang},
+  editor       = {Mario Cannataro and
+                  Huiru Jane Zheng and
+                  Lin Gao and
+                  Jianlin Cheng and
+                  Jo{\~{a}}o Lu{\'{\i}}s de Miranda and
+                  Ester Zumpano and
+                  Xiaohua Hu and
+                  Young{-}Rae Cho and
+                  Taesung Park},
+  title        = {Speed-enhanced Subdomain Alignment for Long-term Stable Neural Decoding
+                  in Brain-computer Interfaces},
+  booktitle    = {{IEEE} International Conference on Bioinformatics and Biomedicine,
+                  {BIBM} 2024, Lisbon, Portugal, December 3-6, 2024},
+  pages        = {3832--3837},
+  publisher    = {{IEEE}},
+  year         = {2024},
+  url          = {https://doi.org/10.1109/BIBM62325.2024.10822151},
+  doi          = {10.1109/BIBM62325.2024.10822151},
+  timestamp    = {Thu, 06 Mar 2025 14:20:15 +0100},
+  biburl       = {https://dblp.org/rec/conf/bibm/WeiRZHW24.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}

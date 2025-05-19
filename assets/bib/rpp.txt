@@ -1,0 +1,6 @@
+@article{rong2025improving,
+  title={Improving Unsupervised Task-driven Models of Ventral Visual Stream via Relative Position Predictivity},
+  author={Rong, Dazhong and Dong, Hao and Gao, Xing and Wei, Jiyu and Hong, Di and Hao, Yaoyao and He, Qinming and Wang, Yueming},
+  journal={arXiv preprint arXiv:2505.08316},
+  year={2025}
+}
