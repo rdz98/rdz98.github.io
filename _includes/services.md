@@ -9,6 +9,7 @@
 <h4 style="margin:0 10px 0;">Reviewers</h4>
 
 <ul style="margin:0 0 5px;">
+  <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69"><autocolor>IEEE Transactions on Knowledge and Data Engineering (TKDE)</autocolor></a></li>
   <li><a href="https://www.ijcai.org"><autocolor>International Joint Conference on Artificial Intelligence (IJCAI) 2025</autocolor></a></li>
   <li><a href="https://cognitivesciencesociety.org/cogsci-2025/"><autocolor>Annual Meeting of the Cognitive Science Society (CogSci) 2025</autocolor></a></li>
   <li><a href="https://icml.cc/Conferences/2025"><autocolor>International Conference on Machine Learning (ICML) 2025</autocolor></a></li>
