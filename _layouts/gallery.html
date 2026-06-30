@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery | YYH</title>
+  <meta name="description" content="YYH's Gallery">
+
+  <link rel="icon" media="(prefers-color-scheme:dark)" href="{{ site.favicon_dark | relative_url }}" type="image/png" />
+  <link rel="icon" media="(prefers-color-scheme:light)" href="{{ site.favicon | relative_url }}" type="image/png" />
+  <script src="{{ '/assets/js/favicon-switcher.js' | relative_url }}"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── top bar ── */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 24px;
+      background: rgba(255,255,255,.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(0,0,0,.06);
+    }
+    .topbar h1 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #222;
+    }
+    .topbar a.home-link {
+      font-size: .9rem;
+      color: #555;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color .2s;
+    }
+    .topbar a.home-link:hover { color: #111; }
+
+    /* ── masonry grid ── */
+    .gallery-wrap {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 20px 16px 40px;
+    }
+    .gallery-container {
+      column-count: 4;
+      column-gap: 16px;
+    }
+
+    .gallery-item {
+      break-inside: avoid;
+      margin-bottom: 16px;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #e8e8e8;
+      position: relative;
+      transition: transform .25s ease, box-shadow .25s ease;
+      cursor: pointer;
+      min-height: 180px;
+    }
+    .gallery-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0,0,0,.12);
+    }
+
+    /* ── placeholder ── */
+    .gallery-item .placeholder {
+      width: 100%;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #e8e8e8 25%, #f2f2f2 50%, #e8e8e8 75%);
+      background-size: 200% 200%;
+      animation: shimmer 1.8s infinite;
+    }
+    .gallery-item.loaded .placeholder { display: none; }
+
+    @keyframes shimmer {
+      0%   { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+
+    /* ── image ── */
+    .gallery-item a {
+      display: block;
+      line-height: 0;
+    }
+    .gallery-item img {
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+      opacity: 0;
+      transition: opacity .5s ease;
+    }
+    .gallery-item.loaded img { opacity: 1; }
+
+    /* ── video ── */
+    .video-wrapper {
+      position: relative;
+      cursor: pointer;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #000;
+    }
+    .video-wrapper video {
+      display: block;
+      width: 100%;
+      border-radius: 10px;
+    }
+    .video-wrapper .play-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0,0,0,.25);
+      transition: background .2s;
+      pointer-events: none;
+    }
+    .video-wrapper.playing .play-overlay { opacity: 0; }
+    .video-wrapper .play-overlay i {
+      font-size: 3.2rem;
+      color: rgba(255,255,255,.92);
+      transition: transform .2s;
+      text-shadow: 0 2px 10px rgba(0,0,0,.5);
+    }
+    .video-wrapper:hover .play-overlay { background: rgba(0,0,0,.4); }
+    .video-wrapper:hover .play-overlay i { transform: scale(1.12); }
+
+    /* ── dark mode ── */
+    @media (prefers-color-scheme: dark) {
+      body { background: #1a1b23; color: #ccc; }
+      .topbar {
+        background: rgba(26,27,35,.85);
+        border-color: rgba(255,255,255,.06);
+      }
+      .topbar h1 { color: #eee; }
+      .topbar a.home-link { color: #aaa; }
+      .topbar a.home-link:hover { color: #fff; }
+      .gallery-item { background: #252630; }
+      .gallery-item .placeholder {
+        background: linear-gradient(135deg, #252630 25%, #2e2f3a 50%, #252630 75%);
+        background-size: 200% 200%;
+      }
+    }
+
+    /* ── responsive ── */
+    @media (max-width: 1200px) { .gallery-container { column-count: 3; } }
+    @media (max-width: 800px)  { .gallery-container { column-count: 2; column-gap: 10px; } .gallery-item { margin-bottom: 10px; } }
+    @media (max-width: 500px)  { .gallery-container { column-count: 1; column-gap: 0; } .gallery-wrap { padding: 12px 8px 30px; } }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <h1>Gallery</h1>
+    <a class="home-link" href="{{ '/' | relative_url }}"><i class="fas fa-arrow-left"></i> Home</a>
+  </div>
+
+  <div class="gallery-wrap">
+    <div class="gallery-container" id="galleryContainer">
+      {% assign valid_exts = "jpg jpeg png mp4" | split: " " %}
+      {% for file in site.static_files %}
+        {% assign path_lower = file.path | downcase %}
+        {% if path_lower contains '/assets/img/gallery/' %}
+          {% assign ext = file.extname | downcase | remove_first: "." %}
+          {% if valid_exts contains ext %}
+            {% assign file_ext = file.extname | downcase %}
+            {% assign mod = forloop.index | modulo: 5 %}
+            {% if mod == 0 %}{% assign ph = 320 %}{% elsif mod == 1 %}{% assign ph = 240 %}{% elsif mod == 2 %}{% assign ph = 280 %}{% elsif mod == 3 %}{% assign ph = 200 %}{% else %}{% assign ph = 360 %}{% endif %}
+            <div class="gallery-item" data-src="{{ file.path | relative_url }}" data-type="{% if file_ext == '.mp4' %}video{% else %}image{% endif %}">
+              <div class="placeholder" style="height:{{ ph }}px;"></div>
+            </div>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      var container = document.getElementById('galleryContainer');
+
+      // ── Fisher-Yates shuffle ──
+      var children = Array.prototype.slice.call(container.children);
+      for (var i = children.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        container.appendChild(children[j]);
+      }
+
+      var items = container.querySelectorAll('.gallery-item');
+
+      function loadImage(item) {
+        var src = item.getAttribute('data-src');
+        var a = document.createElement('a');
+        a.href = src;
+        a.target = '_blank';
+
+        var img = document.createElement('img');
+        img.alt = '';
+        img.src = src;
+
+        function onDone() { item.classList.add('loaded'); }
+        if (img.complete) { onDone(); }
+        else { img.addEventListener('load', onDone); }
+
+        img.addEventListener('error', function() { item.style.display = 'none'; });
+        a.appendChild(img);
+        item.appendChild(a);
+      }
+
+      function loadVideo(item) {
+        var src = item.getAttribute('data-src');
+
+        var wrapper = document.createElement('div');
+        wrapper.className = 'video-wrapper';
+        // Match placeholder height until the poster loads
+        var ph = item.querySelector('.placeholder');
+        if (ph) { wrapper.style.minHeight = ph.style.height || '240px'; }
+
+        var video = document.createElement('video');
+        video.preload = 'metadata';
+        video.muted = true;
+        video.playsInline = true;
+        video.loop = false;
+        video.src = src;
+
+        var overlay = document.createElement('div');
+        overlay.className = 'play-overlay';
+        overlay.innerHTML = '<i class="fas fa-play-circle"></i>';
+
+        wrapper.appendChild(video);
+        wrapper.appendChild(overlay);
+        item.appendChild(wrapper);
+        item.classList.add('loaded');
+
+        wrapper.addEventListener('click', function() {
+          if (wrapper.classList.contains('playing')) {
+            video.pause();
+            wrapper.classList.remove('playing');
+          } else {
+            video.muted = false;
+            video.controls = true;
+            video.play().then(function() {
+              wrapper.classList.add('playing');
+            }).catch(function() {
+              video.muted = true;
+              video.play().then(function() {
+                wrapper.classList.add('playing');
+              }).catch(function() {});
+            });
+          }
+        });
+
+        video.addEventListener('pause', function() {
+          wrapper.classList.remove('playing');
+          video.controls = false;
+          video.muted = true;
+        });
+        video.addEventListener('ended', function() {
+          wrapper.classList.remove('playing');
+          video.controls = false;
+          video.muted = true;
+        });
+      }
+
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (!entry.isIntersecting) return;
+          var item = entry.target;
+          var type = item.getAttribute('data-type');
+          observer.unobserve(item);
+
+          if (type === 'image') {
+            loadImage(item);
+          } else {
+            loadVideo(item);
+          }
+        });
+      }, { rootMargin: '300px 0px', threshold: 0 });
+
+      items.forEach(function(item) { observer.observe(item); });
+    })();
+  </script>
+
+</body>
+</html>
