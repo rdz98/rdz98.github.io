@@ -76,7 +76,7 @@ main:
 - `font`：`"Serif"` 或 `"Sans Serif"`。
 - `enable_footnote`：是否显示主题页脚。
 
-主样式分别位于 `_sass/minimal-light.scss` 和 `_sass/minimal-light-no-dark-mode.scss`，由 `assets/css/` 下对应的 Sass 入口通过 `@use` 加载。两个入口顶部的 YAML front matter（两行 `---`）需要保留。
+主样式分别位于 `_sass/minimal-light.scss` 和 `_sass/minimal-light-no-dark-mode.scss`，由 `assets/css/` 下对应的 Sass 入口通过 `@import` 加载。两个入口顶部的 YAML front matter（两行 `---`）需要保留。
 
 论文模板还包含独立的深色模式媒体查询；调整论文外观时，也要检查 `_includes/publications.md`。
 
@@ -162,7 +162,7 @@ Maintain these settings in `_config.yml`:
 - `font`: `"Serif"` or `"Sans Serif"`.
 - `enable_footnote`: show or hide the theme footer.
 
-Main styles live in `_sass/minimal-light.scss` and `_sass/minimal-light-no-dark-mode.scss`. Their corresponding Sass entry points in `assets/css/` load them using `@use`. Keep the YAML front matter (two lines of `---`) at the top of both entry points.
+Main styles live in `_sass/minimal-light.scss` and `_sass/minimal-light-no-dark-mode.scss`. Their corresponding Sass entry points in `assets/css/` load them using `@import`. This import syntax is retained for compatibility with the default GitHub Pages build; local Dart Sass may emit a deprecation warning without failing the current build. Keep the YAML front matter (two lines of `---`) at the top of both entry points.
 
 The publication template also contains independent dark-mode media queries. Check `_includes/publications.md` when changing publication styles.
 
