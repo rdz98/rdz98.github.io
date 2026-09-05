@@ -1,0 +1,34 @@
+main:
+
+  - title: "Self-Supervised Consistency Enhanced Disentangled Learning for Neural Decoding Generalization in Brain-Machine Interfaces"
+    authors: Jiyu Wei, Di Hong, Zhanjie Zhang, <strong>Dazhong Rong*</strong>, Qinming He, Yueming Wang*
+    venue: IEEE International Conference on Robotics and Automation
+    venue_short: ICRA
+    venue_rank: THCPL-A
+
+  - title: "A Cyclic Adaptation-Generalization Framework with Uncertainty-Guided Self-Paced Learning for Long-Term Brain-Machine Interfaces"
+    authors: Jiyu Wei, Di Hong, Zhanjie Zhang, <strong>Dazhong Rong*</strong>, Qinming He, Yueming Wang
+    venue: IEEE International Conference on Robotics and Automation
+    venue_short: ICRA
+    venue_rank: THCPL-A
+
+  - title: "Reconstruct Private Embeddings: An Interaction-level Membership Inference Attack against Federated Social Matching"
+    authors: Lingqi Jiang#, <strong>Dazhong Rong#</strong>, Guoyao Yu, Jianhai Chen*, Qinming He, Zhenguang Liu
+    venue: IEEE Transactions on Dependable and Secure Computing
+    venue_short: TDSC
+    venue_rank: CCF-A
+    url: https://ieeexplore.ieee.org/abstract/document/11455251
+
+  - title: "Poisoning Deep Learning Based Recommender Model in Federated Learning Scenarios"
+    authors: <strong>Dazhong Rong</strong>, Qinming He, Jianhai Chen*
+    venue: Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence
+    venue_short: IJCAI
+    venue_rank: CCF-A
+    url: https://www.ijcai.org/proceedings/2022/0306
+
+  - title: "FedRecAttack: Model Poisoning Attack to Federated Recommendation"
+    authors: <strong>Dazhong Rong</strong>, Shuai Ye, Ruoyan Zhao, Hon Ning Yuen, Jianhai Chen*, Qinming He
+    venue: IEEE 38th International Conference on Data Engineering
+    venue_short: ICDE
+    venue_rank: CCF-A
+    url: https://ieeexplore.ieee.org/abstract/document/9835228/
