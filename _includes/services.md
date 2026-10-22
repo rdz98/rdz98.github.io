@@ -11,7 +11,6 @@
   <li><autocolor>International Joint Conference on Artificial Intelligence (IJCAI, CCF-B)</autocolor></li>
   <li><autocolor>IEEE International Conference on Bioinformatics and Biomedicine (BIBM, CCF-B)</autocolor></li>
   <li><autocolor>Annual Meeting of the Cognitive Science Society (CogSci, CCF-B)</autocolor></li>
-  <li><autocolor>International Conference on Multimedia Retrieval (ICMR, CCF-B)</autocolor></li>
 </ul>
 
 <h4 style="margin:0 10px 0;">Reviewers</h4>
@@ -19,4 +18,5 @@
 <ul style="margin:0 0 5px;">
   <li><autocolor>IEEE Transactions on Knowledge and Data Engineering (TKDE, CCF-A)</autocolor></li>
   <li><autocolor>IEEE Transactions on Information Forensics and Security (TIFS, CCF-A)</autocolor></li>
+  <li><autocolor>IEEE Transactions on Dependable and Secure Computing (TDSC, CCF-A)</autocolor></li>
 </ul>

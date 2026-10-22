@@ -27,6 +27,6 @@
 
 ## 其他荣誉
 + 浙江省高等教育学会教育技术分会，高校教师教育技术成果一等奖
-+ The 16th International Conference on Knowledge Science, Engineering and Management (KSEM)，最佳论文亚军奖
++ The 16th International Conference on Knowledge Science, Engineering and Management，最佳论文亚军奖
 + 浙江大学计算机科学与技术学院，华为基础研究奖学金
 + ACM-ICPC国际大学生程序设计竞赛，亚洲区域赛银奖
